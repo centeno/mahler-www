@@ -1,0 +1,41 @@
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li class="active">{{ 'MENU_MIDIA' | translate }}</li>
+</ol>
+
+<div class="jumbotron" ng-show="checkLanguage('pt')" ng-style="{'background-image':'url({{getBanner('midia')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('en')" ng-style="{'background-image':'url({{getBannerEn('midia')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('es')" ng-style="{'background-image':'url({{getBannerEs('midia')}})'}"></div>
+
+<div class="row">
+	<div class="col-sm-6 text-center">
+		<div class="page-header">
+			<h1>{{ 'MIDIA_VIDEOS' | translate }}</h1>
+		</div>
+		{{ 'MIDIA_VIDEOS_TEXTO' | translate }}<br/><br/>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_cnP8cKyycw"></iframe>
+		</div><br/><br/>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BfAjBy6TxGQ"></iframe>
+		</div>
+	</div>
+	<div class="col-sm-6 text-center">
+		<div class="page-header">
+			<h1>{{ 'MIDIA_ANUNCIOS' | translate }}</h1>
+		</div>
+		{{ 'MIDIA_ANUNCIOS_TEXTO' | translate }}<br/><br/>
+		<div class="row" ng-repeat="anuncio in anuncios">
+			<div class="col-sm-12">
+				<div class="thumbnail">
+					<a ng-href="{{url}}/{{anuncio.foto}}" target="_blank">
+						<img ng-src="{{url}}/{{anuncio.foto}}">
+					</a>
+					<div class="caption">
+						<h3><a ng-href="{{url}}/{{anuncio.foto}}" target="_blank">{{anuncio.nome}}</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

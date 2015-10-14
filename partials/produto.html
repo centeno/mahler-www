@@ -1,0 +1,40 @@
+<div class="modal-header">
+	<div ng-show="checkLanguage('pt')" class="page-header"><h1>{{produto.nome}}</h1></div>
+	<div ng-show="checkLanguage('en')" class="page-header"><h1>{{produto.nome_en}}</h1></div>
+	<div ng-show="checkLanguage('es')" class="page-header"><h1>{{produto.nome_es}}</h1></div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-lg-6 text-center">
+		<img class="img-responsive" ng-src="{{url}}/{{produto.foto}}"> {{ 'PRODUTO_REFERENCIA' | translate }} {{produto.referencia}}
+	</div>
+	<div class="col-xs-12 col-sm-6 col-lg-6">
+		<table class="table table-hover table-condensed text-center">
+			<thead>
+				<tr>
+					<th class="text-center">{{ 'PRODUTO_TAMANHO' | translate }}</th>
+					<th class="text-center">{{ 'PRODUTO_ACABAMENTO' | translate }}</th>
+					<th class="text-center">{{ 'PRODUTO_ESPECIFICACAO' | translate }}</th>
+					<th class="text-center">{{ 'PRODUTO_FOTO' | translate }}</th>
+				</tr>
+			</thead>
+			<tbody ng-controller="EspecificacaoController" ng-init="getEspecificacoes(produto.slug)" >
+				<tr ng-repeat="x in especificacoes2">
+					<td>{{x.tamanho}}</td>
+					<td>{{x.acabamento}}</td>
+					<td>
+						<a href="{{url}}/{{x.arquivo}}" target="_blank">
+							<span class="glyphicon glyphicon-list" aria-hidden="true"></span></a>
+					</td>
+					<td>
+						<a href="javascript:void(0);" ng-click="open(x.foto)">
+						<!--a href="{{url}}/{{x.foto}}" target="_blank"-->
+							<span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-danger" ng-click="cancel()">{{ 'UTIL_FECHAR' | translate }}</button>
+</div>

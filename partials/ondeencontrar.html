@@ -1,0 +1,25 @@
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li class="active">{{ 'MENU_ONDE' | translate }}</li>
+</ol>
+
+<div class="jumbotron" ng-show="checkLanguage('pt')" ng-style="{'background-image':'url({{getBanner('ondeencontrar')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('en')" ng-style="{'background-image':'url({{getBannerEn('ondeencontrar')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('es')" ng-style="{'background-image':'url({{getBannerEs('ondeencontrar')}})'}"></div>
+
+<div class="row">
+	<div class="col-sm-6 text-center">
+		<div class="page-header">
+			<h1>{{ 'ONDE_LOJISTAS' | translate }}</h1>
+		</div>
+		{{ 'ONDE_LOJISTAS_TEXTO' | translate }}<br/><br/>
+		<a class="btn btn-danger" href="#representantes" role="button">{{ 'ONDE_SOU_LOJISTA' | translate }}</a>
+	</div>
+	<div class="col-sm-6 text-center">
+		<div class="page-header">
+			<h1>{{ 'ONDE_CONSUMIDORES' | translate }}</h1>
+		</div>
+		{{ 'ONDE_CONSUMIDORES_TEXTO' | translate }}<br/><br/>
+		<a class="btn btn-danger" href="#ondeencontrar/lojas" role="button">{{ 'ONDE_SOU_CONSUMIDOR' | translate }}</a>
+	</div>
+</div>

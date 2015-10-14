@@ -1,0 +1,47 @@
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li>{{ 'MENU_PRODUTOS' | translate }}</li>
+	<li ng-show="categoria_slug=='ferragens'" class="active">{{ 'MENU_PRODUTOS_FERRAGEM' | translate }}</li>
+	<li ng-show="categoria_slug=='acessibilidade'" class="active">{{ 'MENU_PRODUTOS_ACESSIBILIDADE' | translate }}</li>
+	<li ng-show="categoria_slug=='especiais'" class="active">{{ 'MENU_PRODUTOS_DOBRADIÇA' | translate }}</li>
+	<li ng-show="categoria_slug=='sobmedida'" class="active">{{ 'MENU_PRODUTOS_MEDIDA' | translate }}</li>
+	<li ng-show="categoria_slug=='nautica'" class="active">{{ 'MENU_PRODUTOS_NAUTICA' | translate }}</li>
+	<li ng-show="categoria_slug=='case'" class="active">{{ 'MENU_PRODUTOS_CASE' | translate }}</li>
+</ol>
+
+<div class="jumbotron" ng-show="checkLanguage('pt')" ng-style="{'background-image':'url({{getBanner(categoria_slug)}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('en')" ng-style="{'background-image':'url({{getBannerEn(categoria_slug)}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('es')" ng-style="{'background-image':'url({{getBannerEs(categoria_slug)}})'}"></div>
+
+<p ng-show="checkLanguage('pt') && categoria.texto!=null" style="white-space: pre-wrap">{{ categoria.texto }}</p>
+<p ng-show="checkLanguage('en') && categoria.texto_en!=null" style="white-space: pre-wrap">{{ categoria.texto_en }}</p>
+<p ng-show="checkLanguage('es') && categoria.texto_es!=null" style="white-space: pre-wrap">{{ categoria.texto_es }}</p>
+
+<a class="btn btn-danger" href="javascript:void(0);" ng-click="orcamento()" ng-show="categoria_slug=='especiais'||categoria_slug=='sobmedida'"> 
+	{{ 'PRODUTO_ORCAMENTO' | translate }}		
+</a>
+
+<div class="row" style="margin-bottom: 20px;" ng-repeat="linha in linhas">
+	<div class="col-xs-12 col-sm-12 col-lg-12">
+		<div class="page-header">
+			<h1 ng-show="checkLanguage('pt')">{{linha.nome }}</h1>
+			<h1 ng-show="checkLanguage('en')">{{linha.nome_en}}</h1>
+			<h1 ng-show="checkLanguage('es')">{{linha.nome_es}}</h1>
+		</div>
+		<div class="row" ng-controller="ProdutosController" ng-init="getProdutos(linha.slug)" >
+			<div class="col-xs-4 col-sm-3 col-lg-2 text-center" style="margin-bottom: 20px; height:240px;" ng-repeat="produto in produtos">
+				<a href="javascript:void(0);" ng-click="open(produto.slug)">
+					<div class="thumbnail">
+						<img ng-src="{{url}}/{{produto.foto}}">
+					</div>
+					<div style="color: #fff; background-color: #4d4d4d; margin-top: -25px;">
+						{{ 'PRODUTO_REFERENCIA' | translate }} {{produto.referencia}}
+					</div>
+					<span ng-show="checkLanguage('pt')">{{produto.nome}}</span>
+					<span ng-show="checkLanguage('en')">{{produto.nome_en}}</span>
+					<span ng-show="checkLanguage('es')">{{produto.nome_es}}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

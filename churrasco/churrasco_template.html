@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="country" content="Brasil, Brazil" />
+	<meta name="author" content="Forehead, Diego Centeno, Centeno D." />
+	<meta name="designer" content="Forehead, Diego Centeno, Centeno D." />
+	<meta name="description" content="Mahler Indústria de produtos em aço inox Indústra de utensílios em inox industria de artefatos em aço inox localizada em Porto Alegre Rio Grande do Sul Venda de produtos em inox Indústria de produtos inox RS utensilios aço inox dobradiças ferragens puxadores parafusos porcas arruelas buchas fechos barras de apoio espetos acessórios para churrasco barras para churrasqueiras e grelhas" />
+	<meta name="keywords" content="Mahler Inox, Mahler, Aço Inox, Aço, Inox, ferragens, espetos, dobradiças" />
+	<meta name="revisit-after" content="30 days" />
+    <title>Mahler Inox - Linha Churrasco</title>
+    <link href="churrasco.css" rel="stylesheet" type="text/css" />
+    <link href="jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.transify.js"></script>
+    <script type="text/javascript" src="jquery.blinds.js"></script>
+    <script type="text/javascript" src="jquery.fancybox.js"></script>
+    <script type="text/javascript" src="swfobject.js"></script>
+</head>
+<body>
+    <div id="divTop">
+        <div id="divTopContent">
+            <div id="divLogo">
+                <a href="/churrasco/"><img src="../img/churrasco/img_logo.png" /></a>
+            </div>
+            <div id="divMenu">
+                <img src="../img/churrasco/img_menu.png" usemap="#Map" />
+            </div>
+            <a href="churrasco_historia.html"><img id="lnkHistoria" src="../img/churrasco/lnk_historia.png" /></a><a href="churrasco_videos.html"><img id="lnkVideos" src="../img/churrasco/lnk_videos.png" /></a><a href="churrasco_ondecomprar.html"><img id="lnkOndeComprar" src="../img/churrasco/lnk_onde_comprar.png" /></a>
+        </div>
+    </div>
+    <div id="divBanner">
+        <div id="divBannerContent">
+            <img src="../img/churrasco/img_banner.png"/>
+        </div>
+    </div>
+    <div id="divMiddle">
+    	<div id="divMiddleContent">
+        	<div id="divMiddleTitle">
+            	{% block title %}
+	            {% endblock title %}
+            </div>
+			{% block content %}
+            {% endblock content %}
+		</div>
+    </div>
+    <div id="divBottom">
+        <div id="divBottomContent">
+        	<img id="txtBottom" src="../img/churrasco/txt_bottom.png" />
+        </div>
+    </div>
+</body>
+</html>
+<map name="Map" id="Map">
+    <area shape="rect" coords="42,305,153,341" href="churrasco_grelhas.html" alt="Grelhas" />
+    <area shape="rect" coords="32,259,162,294" href="churrasco_especiais.html" alt="Especiais" />
+    <area shape="rect" coords="24,211,168,244" href="churrasco_acessorios.html" alt="Acessórios" />
+    <area shape="rect" coords="52,161,146,197" href="churrasco_duplo.html" alt="Duplo" />
+    <area shape="rect" coords="51,113,145,149" href="churrasco_galeto.html" alt="Galeto" />
+    <area shape="rect" coords="31,64,163,98" href="churrasco_churrasco.html" alt="Churrasco" />
+</map>
+
+<script type="text/javascript">
+	$(function(){		
+        $(".fancyvideo").fancybox({
+            'overlayShow'	:	true,
+			'type'			: 	'swf',
+			'swf'			: 	{'allowfullscreen':'true', 'wmode':'transparent'}
+        });
+		
+		$(".zoom").fancybox({
+			'transitionIn'	:	'elastic',
+			'transitionOut'	:	'elastic',
+			'speedIn'		:	600, 
+			'speedOut'		:	200, 
+			'overlayShow'	:	true
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-24582457-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>

@@ -1,0 +1,26 @@
+<form action="http://api.mahler.com.br/curriculo/" method="POST" enctype="multipart/form-data" target="iCurriculo" name="formCurriculo">
+	<input type="hidden" name="mailTo" value="{{email}}" />
+	<div class="modal-header">
+		<div class="page-header"><h1>{{ 'CONTATO_TRABALHE' | translate }}</h1></div>
+	</div>
+	<div class="modal-body">	
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2" translate="CONTATO_NOME"></span>
+			<input type="text" class="form-control" aria-describedby="sizing-addon2" name="nome">
+		</div><br/>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2">E-mail</span>
+			<input type="text" class="form-control" aria-describedby="sizing-addon2" name="email">
+		</div><br/>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2" translate="CONTATO_CURRICULO"></span>
+			<input type="file" class="form-control" aria-describedby="sizing-addon2" name="curriculo">
+		</div>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-danger" ng-click="cancel()" id="btnFechar">{{ 'UTIL_FECHAR' | translate }}</button>
+		<button class="btn btn-success" ng-click="send()">{{ 'CONTATO_ENVIAR' | translate }}</button>
+	</div>
+</form>
+<iframe src="" name="iCurriculo" name="iCurriculo" style="display: none"></iframe>

@@ -1,0 +1,260 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html, body
+{
+    height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666666;
+}
+
+div {
+	background-color: tranparent;
+}
+
+a {
+	text-decoration: none;
+	color: #666666;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#all
+{
+    min-height: 100%;}
+
+* html #all
+{
+    height: 100%;
+}
+
+#divTopHome, #divBannerHome, #divMiddleHome, #divBottomHome, #divTop, #divBanner, #divMiddle, #divBottom
+{
+	width: 100%;
+	float: none;
+	clear: both;
+}
+
+#divTopHomeContent, #divBannerHomeContent, #divMiddleHomeContent, #divBottomHomeContent, #divTopContent, #divBannerContent, #divMiddleContent, #divBottomContent
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#divTopHome
+{
+	background: url(../img/churrasco/bgr_top_home.jpg);
+}
+#divTopHomeContent
+{
+	height: 95px;
+	background: url(../img/churrasco/bgr_top_home.jpg) no-repeat;
+}
+
+#divBannerHome
+{
+	background: url(../img/churrasco/bgr_banner_home.png) repeat-x;
+	background-position: 0px 300px;
+}
+#divBannerHomeContent
+{
+	height: 437px;
+	background: url(../img/churrasco/bgr_banner_home.png) no-repeat;
+	background-position: 0px 300px;
+}
+
+#divMiddleHome
+{
+	background: url(../img/churrasco/bgr_middle_home.png);
+}
+#divMiddleHomeContent
+{
+	height: 385px;
+	background: url(../img/churrasco/bgr_middle_home.png) no-repeat;
+}
+
+#divBottomHome
+{
+	background: url(../img/churrasco/bgr_bottom_home.png);
+}
+#divBottomHomeContent
+{
+	height: 95px;
+	background: url(../img/churrasco/bgr_bottom_home.png) no-repeat;
+}
+
+#divTop
+{
+	background: url(../img/churrasco/bgr_top.jpg);
+}
+#divTopContent
+{
+	height: 95px;
+	background: url(../img/churrasco/bgr_top.jpg) no-repeat;
+}
+
+#divBanner
+{
+	background: url(../img/churrasco/bgr_banner.png) repeat-x;
+}
+#divBannerContent
+{
+	height: 300px;
+	background: url(../img/churrasco/bgr_banner.png) no-repeat;
+}
+
+#divMiddle
+{
+
+}
+#divMiddleContent
+{
+	min-height: 500px;
+	background: url(../img/churrasco/bgr_middle.png) no-repeat;
+}
+#divMiddleTitle
+{
+	height: 85px;
+}
+
+#divBottom
+{
+	margin-top: 20px;
+	background: url(../img/churrasco/bgr_bottom.png);
+}
+#divBottomContent
+{
+	height: 95px;
+	background: url(../img/churrasco/bgr_bottom.png) no-repeat;
+}
+
+#divLogo
+{
+	height: 232px;
+	width: 223px;
+	margin-left: 22px;
+	margin-top: 10px;
+	position: absolute;
+	float: left;
+}
+
+#divMenu
+{
+	height: 370px;
+	width: 195x;
+	margin-left: 750px;
+	position: absolute;
+}
+
+#lnkHistoria
+{
+	/*margin-left: 250px;*/
+	margin-left: 280px;
+	margin-top: 6px;
+}
+
+#lnkChurrascometro, #lnkVideos, #lnkOndeComprar
+{
+	/*margin-left: 6px;*/
+	margin-left: 30px;
+	margin-top: 6px;
+}
+
+#lnkEspetosHome
+{
+	margin-left: 19px;
+}
+#lnkGrelhasHome, #lnkAcessoriosHome
+{
+	margin-left: 51px;
+}
+
+#txtBottom
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#boxProduto, #boxProduto2
+{
+	height: 440px;
+	width: 228px;
+	background: url(../img/churrasco/bgr_box_produto.png) no-repeat;
+	margin: 0px 8px 25px 8px;
+	float: left;
+}
+#boxProduto2
+{
+	background: url(../img/churrasco/bgr_box_produto2.png) no-repeat;
+}
+
+#boxProdutoContent
+{
+	margin: 15px 7px 0px 7px;
+	text-align: center;
+	color: #464646;
+	font-size: 12px;
+}
+
+#boxProdutoContent #titNome
+{
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	color: #9E0B0F;
+	font-weight: bold;
+	height: 35px;
+	width: 213px;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+}
+#boxProdutoContent #imgFoto
+{
+	width: 175px;
+	height: 175px;
+}
+
+#boxProdutoContent #titTamanho
+{
+	height: 23px;
+	margin-top: 35px;
+}
+#boxProdutoContent #titIndicacao
+{
+	height: 47px;
+	margin-top: 23px;
+}
+#boxProdutoContent #titIndicacao div
+{
+	height: 47px;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+	width: 214px;
+}
+#boxProdutoContent #opcoes
+{
+	height: 47px;
+	margin-top: 31px;
+}
+#boxProdutoContent #opcoes img
+{
+	margin-left: 5px;
+}
+
+
+#titEstado
+{
+	font-size: 24px;
+	font-family: "Trebuchet MS";
+	color: #9E0B0F;
+	font-weight: bold;
+	margin-top: 15px;
+}

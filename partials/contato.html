@@ -1,0 +1,80 @@
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li class="active">{{ 'MENU_CONTATO' | translate }}</li>
+</ol>
+
+<div class="jumbotron" ng-show="checkLanguage('pt')" ng-style="{'background-image':'url({{getBanner('contato')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('en')" ng-style="{'background-image':'url({{getBannerEn('contato')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('es')" ng-style="{'background-image':'url({{getBannerEs('contato')}})'}"></div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="page-header text-center">
+			<h1>{{ 'CONTATO_FALE' | translate }}</h1>
+		</div>
+		<form action="http://api.mahler.com.br/contato/" method="POST" target="iContato" name="formContato">
+			<input type="hidden" name="mailTo" value="norton@mahler.com.br" />
+			<div class="input-group">
+				<span class="input-group-addon" id="sizing-addon2" translate="CONTATO_NOME"></span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon2" name="nome">
+			</div><br/>
+			<div class="input-group">
+				<span class="input-group-addon" id="sizing-addon2">E-mail</span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon2" name="email">
+			</div><br/>
+			<div class="input-group">
+				<span class="input-group-addon" id="sizing-addon2" translate="CONTATO_FONE"></span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon2" name="telefone">
+			</div><br/>
+			<div class="input-group">
+				<span class="input-group-addon" id="sizing-addon2" translate="CONTATO_ASSUNTO"></span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon2" name="assunto">
+			</div><br/>
+			<div class="input-group">
+				<span class="input-group-addon" id="sizing-addon2" translate="CONTATO_MENSAGEM"></span>
+				<textarea class="form-control" rows="5" aria-describedby="sizing-addon2" name="mensagem"></textarea>
+			</div><br/>
+			<div>
+				<button class="btn btn-success" ng-click="send()">{{ 'CONTATO_ENVIAR' | translate }}</button>
+			</div>
+		</form>
+		<iframe src="" name="iContato" name="iContato" style="display: none"></iframe>
+	</div>
+	<div class="col-md-6">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="page-header text-center">
+					<h1>{{ 'CONTATO_TRABALHE' | translate }}</h1>
+				</div>
+				{{ 'CONTATO_TRABALHE_TEXTO' | translate }}<br/>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="javascript:void(0);" ng-click="curriculo('rh@mahler.com.br')" translate="CONTATO_TRABALHE_CV"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="page-header text-center">
+					<h1>{{ 'CONTATO_REPRESENTANTE' | translate }}</h1>
+				</div>
+				<p translate="CONTATO_REPRESENTANTE_TEXTO"></p>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="javascript:void(0);" ng-click="curriculo('norton@mahler.com.br')" translate="CONTATO_REPRESENTANTE_LOJAS"></a>
+					</li>
+					<li class="list-group-item">
+						<a href="javascript:void(0);" ng-click="curriculo('norton@mahler.com.br')" translate="CONTATO_REPRESENTANTE_IND"></a>
+					</li>
+					<li class="list-group-item">
+						<a href="javascript:void(0);" ng-click="curriculo('norton@mahler.com.br')" translate="CONTATO_REPRESENTANTE_CIVIL"></a>
+					</li>
+					<li class="list-group-item">
+						<a href="javascript:void(0);" ng-click="curriculo('norton@mahler.com.br')" translate="CONTATO_REPRESENTANTE_HOSP"></a>
+  					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

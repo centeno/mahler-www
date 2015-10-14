@@ -1,0 +1,209 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M0 512q0-74.286 40.571-142t109.143-116.857 163.429-78 198.857-28.857q139.429 0 257.143 48.857t186.286 133.143 68.571 183.714-68.571 183.714-186.286 133.143-257.143 48.857q-40 0-82.857-4.571-113.143 100-262.857 138.286-28 8-65.143 12.571-9.714 1.143-17.429-5.143t-10-16.571v-0.571q-1.714-2.286-0.286-6.857t1.143-5.714 2.571-5.429l3.429-5.143t4-4.857 4.571-5.143q4-4.571 17.714-19.714t19.714-21.714 17.714-22.571 18.571-29.143 15.429-33.714 14.857-43.429q-89.714-50.857-141.429-125.714t-51.714-160.571z"
+				],
+				"attrs": [],
+				"tags": [
+					"comment"
+				],
+				"defaultCode": 61557,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"id": 110,
+				"order": 13,
+				"prevSize": 28,
+				"code": 61557,
+				"name": "comment"
+			},
+			"setIdx": 0,
+			"iconIdx": 110
+		},
+		{
+			"icon": {
+				"paths": [
+					"M54.286 517.143v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714z"
+				],
+				"width": 585,
+				"attrs": [],
+				"tags": [
+					"facebook"
+				],
+				"defaultCode": 61594,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"id": 145,
+				"order": 15,
+				"prevSize": 28,
+				"code": 61594,
+				"name": "facebook"
+			},
+			"setIdx": 0,
+			"iconIdx": 145
+		},
+		{
+			"icon": {
+				"paths": [
+					"M0 128v768h1024v-768h-1024zM192 832h-128v-128h128v128zM192 576h-128v-128h128v128zM192 320h-128v-128h128v128zM768 832h-512v-640h512v640zM960 832h-128v-128h128v128zM960 576h-128v-128h128v128zM960 320h-128v-128h128v128zM384 320v384l256-192z"
+				],
+				"tags": [
+					"film",
+					"video",
+					"movie",
+					"tape",
+					"play"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 19,
+				"order": 2,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "film",
+				"ligatures": ""
+			},
+			"setIdx": 1,
+			"iconIdx": 19
+		},
+		{
+			"icon": {
+				"paths": [
+					"M896 128v832h-672c-53.022 0-96-42.98-96-96 0-53.018 42.978-96 96-96h608v-768h-640c-70.398 0-128 57.6-128 128v768c0 70.4 57.602 128 128 128h768v-896h-64zM256 832h576v64h-576z"
+				],
+				"tags": [
+					"book",
+					"reading"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 31,
+				"order": 3,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "book2",
+				"ligatures": ""
+			},
+			"setIdx": 1,
+			"iconIdx": 31
+		},
+		{
+			"icon": {
+				"paths": [
+					"M704 640c-64 64-64 128-128 128s-128-64-192-128-128-128-128-192 64-64 128-128-128-256-192-256-192 192-192 192c0 128 131.5 387.5 256 512s384 256 512 256c0 0 192-128 192-192s-192-256-256-192z"
+				],
+				"tags": [
+					"phone",
+					"contact",
+					"telephone",
+					"support",
+					"call"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 60,
+				"order": 5,
+				"prevSize": 32,
+				"code": 58884,
+				"name": "phone2"
+			},
+			"setIdx": 1,
+			"iconIdx": 60
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 516c-108.248 0-196-87.752-196-196s87.752-196 196-196 196 87.752 196 196-87.752 196-196 196zM388 320c0-68.483 55.517-124 124-124s124 55.517 124 124c0 68.483-55.517 124-124 124-68.483 0-124-55.517-124-124z"
+				],
+				"tags": [
+					"location",
+					"map",
+					"marker",
+					"pin"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 67,
+				"order": 1,
+				"prevSize": 32,
+				"code": 58883,
+				"name": "location",
+				"ligatures": ""
+			},
+			"setIdx": 1,
+			"iconIdx": 67
+		},
+		{
+			"icon": {
+				"paths": [
+					"M575.87 1024h-191.87v-512h-128v-176.45l128-0.058-0.208-103.952c0-143.952 39.034-231.54 208.598-231.54h141.176v176.484h-88.23c-66.032 0-69.206 24.656-69.206 70.684l-0.262 88.324h158.69l-18.704 176.45-139.854 0.058-0.13 512z"
+				],
+				"tags": [
+					"facebook",
+					"social"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 361,
+				"order": 6,
+				"prevSize": 32,
+				"code": 58885,
+				"name": "facebook2"
+			},
+			"setIdx": 1,
+			"iconIdx": 361
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showSVGs": true,
+		"search": "",
+		"showQuickUse2": true
+	}
+}

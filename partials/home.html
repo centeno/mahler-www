@@ -1,0 +1,26 @@
+<div class="jumbotron" style="height: 270px" ng-show="checkLanguage('pt')" ng-style="{'background-image':'url({{getBanner('home')}})'}"></div>
+<div class="jumbotron" style="height: 270px" ng-show="checkLanguage('en')" ng-style="{'background-image':'url({{getBannerEn('home')}})'}"></div>
+<div class="jumbotron" style="height: 270px" ng-show="checkLanguage('es')" ng-style="{'background-image':'url({{getBannerEs('home')}})'}"></div>
+
+<div class="row">
+	<div class="col-sm-3 text-center" style="margin-bottom: 60px">
+		<div class="iconBox"><span class="icon icon-film"></span></div>
+		<p>{{ 'HOME_TEXTO_VIDEO' | translate }}</p>
+		<a class="btn btn-danger" href="#/midia" role="button">{{ 'UTIL_SAIBA_MAIS' | translate }} &raquo;</a>
+	</div>
+	<div class="col-sm-3 text-center" style="margin-bottom: 60px">
+		<div class="iconBox"><span class="icon icon-book2"></span></div>
+		<p>{{ 'HOME_TEXTO_CATALOGO' | translate }}</p>
+		<a class="btn btn-danger" href="http://www.youblisher.com/p/1110503-Mahler/" role="button" target="_blank">{{ 'UTIL_SAIBA_MAIS' | translate }} &raquo;</a>
+	</div>
+	<div class="col-sm-3 text-center" style="margin-bottom: 60px">
+		<div class="iconBox"><span class="icon icon-location"></span></div>
+		<p>{{ 'HOME_TEXTO_ONDE' | translate }}</p>
+		<a class="btn btn-danger" href="#/ondeencontrar" role="button">{{ 'UTIL_SAIBA_MAIS' | translate }} &raquo;</a>
+	</div>
+	<div class="col-sm-3 text-center" style="margin-bottom: 60px">
+		<div class="iconBox"><span class="icon icon-comment"></span></div>
+		<p>{{ 'HOME_TEXTO_CONTATO' | translate }}</p>
+		<a class="btn btn-danger" href="#/contato" role="button">{{ 'UTIL_SAIBA_MAIS' | translate }} &raquo;</a>
+	</div>
+</div>

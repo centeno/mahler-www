@@ -1,0 +1,103 @@
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li class="active">{{ 'MENU_ONDE' | translate }}</li>
+</ol>
+<div class="jumbotron" ng-show="checkLanguage('pt')" ng-style="{'background-image':'url({{getBanner('lojas')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('en')" ng-style="{'background-image':'url({{getBannerEn('lojas')}})'}"></div>
+<div class="jumbotron" ng-show="checkLanguage('es')" ng-style="{'background-image':'url({{getBannerEs('lojas')}})'}"></div>
+
+<div class="row">
+	<div class="col-sm-4 text-center">
+		<div class="iconBox"><span class="icon icon-location"></span></div>
+	</div>
+	<div class="col-sm-8">
+		<p translate="ONDE_TEXTO"></p>
+		<select name="estado" ng-model="selectedEstado" class="form-control" ng-change="filtra()">
+			<option value="">Todos</option>
+			<option value="AC">Acre</option>
+			<option value="AL">Alagoas</option>
+			<option value="AP">Amapá</option>
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="DF">Distrito Federal</option>
+			<option value="GO">Goiás</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="MA">Maranhão</option>
+			<option value="MT">Mato Grosso</option>
+			<option value="MS">Mato Grosso do Sul</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="PA">Pará</option>
+			<option value="PB">Paraiba</option>
+			<option value="PR">Paraná</option>
+			<option value="PE">Pernambuco</option>
+			<option value="PI">Piauí­</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="RN">Rio Grande do Norte</option>
+			<option value="RS">Rio Grande do Sul</option>
+			<option value="RO">Rondônia</option>
+			<option value="RR">Roraima</option>
+			<option value="SP">São Paulo</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="SE">Sergipe</option>
+			<option value="TO">Tocantins</option>
+		</select>
+		<br>
+		<ul class="nav nav-pills nav-justified">
+			<li role="presentation" class="{{activeTodos}}"> {{ }}
+				<a href="javascript:void(0);" data-ng-click="vendaTodos()" translate="ONDE_VENDA_TODOS"></a>
+			</li>
+			<li role="presentation" class="{{activeOnline}}">
+				<a href="javascript:void(0);" data-ng-click="vendaOnline()" translate="ONDE_VENDA_ONLINE"></a>
+			</li>
+			<li role="presentation" class="{{activeFone}}">
+				<a href="javascript:void(0);" data-ng-click="vendaFone()" translate="ONDE_VENDA_FONE"></a>
+			</li>
+			<li role="presentation" class="{{activeFisica}}">
+				<a href="javascript:void(0);" data-ng-click="vendaFisica()" translate="ONDE_VENDA_FISICA"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<br/><br/>
+<div class="row">
+	<div class="col-sm-6 col-md-4" ng-repeat="c in cliente" style="margin-bottom: 20px;">
+		<div class="panel panel-danger" style="height:350px;">
+			<div class="panel-heading">
+				<h3 class="panel-title">{{c.nome}}</h3>
+			</div>
+			<div class="panel-body">
+				<div class="thumbnail">
+					<img ng-src="{{url}}/{{c.foto}}"><br>
+				</div>
+				<div>
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 
+					<span ng-show="c.endereco != '' && c.endereco != '.'">{{ c.endereco }} -</span> 
+					<span ng-show="c.bairro != '' && c.bairro != '.'">{{ c.bairro }} -</span> 
+					<span ng-show="c.cidade != '' && c.cidade != '.'">{{ c.cidade }} /</span> 
+					{{ c.estado }}
+				</div>
+				<div ng-show="c.email != ''">
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> {{ c.email }}
+				</div>
+				<div ng-show="c.fone != ''">
+					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ c.fone }}
+				</div>
+				<div ng-show="c.site != ''">
+					<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 
+					<a href="http://{{ c.site }}" target="_blank">{{ c.site }}</a>
+				</div>
+				<div ng-show="c.compraonline">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ 'ONDE_VENDA_ONLINE' | translate }}
+				</div>
+				<div ng-show="c.comprafone">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ 'ONDE_VENDA_FONE' | translate }}
+				</div>
+				<div ng-show="c.lojafisica">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ 'ONDE_VENDA_FISICA' | translate }}
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
