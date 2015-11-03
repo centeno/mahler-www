@@ -21,3 +21,8 @@ npm-debug.log
 /tmp/
 /scripts/bower/bower-*
 _*
+/media/anuncios/
+/media/banners/
+/media/clientes/
+/media/especificacoes/
+/media/fotos/
