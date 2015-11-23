@@ -36,11 +36,17 @@ var app = angular.module('myApp', [
 		controller: 'RepresentanteController'
 	});
 
+	/*
 	$routeProvider.when('/ondeencontrar', {
 		templateUrl: 'partials/ondeencontrar.html?id=' + (new Date().getTime()),
 	});
 
 	$routeProvider.when('/ondeencontrar/lojas', {
+		templateUrl: 'partials/clientes.html?id=' + (new Date().getTime()),
+		controller: 'ClienteController'
+	});
+	*/
+	$routeProvider.when('/ondeencontrar', {
 		templateUrl: 'partials/clientes.html?id=' + (new Date().getTime()),
 		controller: 'ClienteController'
 	});

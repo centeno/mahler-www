@@ -13,7 +13,7 @@ var TRANSLATE_PT = {
 	MENU_PRODUTOS_CHURRASCO			: 'Churrasco',
 	MENU_PRODUTOS_CATALOGO			: 'Catálogo Virtual',
 	MENU_REPRESENTANTES				: 'Representantes',
-	MENU_ONDE						: 'Onde Encontrar',
+	MENU_ONDE						: 'Compre Aqui',
 	MENU_MIDIA						: 'Mídia',
 	MENU_CONTATO					: 'Contato',
 
@@ -99,7 +99,7 @@ var TRANSLATE_EN = {
 	MENU_PRODUTOS_CHURRASCO			: 'Barbecue',
 	MENU_PRODUTOS_CATALOGO			: 'Virtual Catalog',
 	MENU_REPRESENTANTES				: 'Representatives',
-	MENU_ONDE						: 'Find Us',
+	MENU_ONDE						: 'Buy Here',
 	MENU_MIDIA						: 'Media',
 	MENU_CONTATO					: 'Contact',
 
@@ -185,7 +185,7 @@ var TRANSLATE_ES = {
 	MENU_PRODUTOS_CHURRASCO			: 'Barbacoa',
 	MENU_PRODUTOS_CATALOGO			: TRANSLATE_PT["MENU_PRODUTOS_CATALOGO"],
 	MENU_REPRESENTANTES				: TRANSLATE_PT["MENU_REPRESENTANTES"],
-	MENU_ONDE						: 'Donde Estamos',
+	MENU_ONDE						: 'Comprar Aquí',
 	MENU_MIDIA						: 'Medios',
 	MENU_CONTATO					: 'Contacto',
 
