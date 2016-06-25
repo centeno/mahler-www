@@ -20,7 +20,7 @@ var TRANSLATE_PT = {
 	RODAPE_FONE1					: '51 3303.3350',
 	RODAPE_FONE2					: '11 2626.9203',
 	RODAPE_FONE3					: '19 4040.4722',
-	RODAPE_FONE4					: '',
+	RODAPE_FONE4					: '0800 724 3398',
 
 	HOME_BANNER_TITULO				: 'Mahler Inox',
 	HOME_BANNER_TEXTO				: 'Bem vindo ao novo website da Mahler, aqui você encontra todas as informações sobre nós e nossos produtos.',
