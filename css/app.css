@@ -1,5 +1,5 @@
 body {
-  	padding-top: 90px;
+	padding-top: 90px;
 	background: url(../img/bgr_body.jpg) repeat-x;
 	background-position: 0px 80px;
 	background-attachment: fixed;
@@ -86,12 +86,19 @@ footer .telefones {
 footer .telefones p {
 	/*font-family: 'Oswald', sans-serif;*/
 	font-family: 'Lobster', cursive;
-	font-size: 2.0em;
+	font-size: 1.3em;
+	margin-top: 18px;
+}
+
+footer .telefones p.televendas {
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
 	margin-top: 10px;
 }
 
 footer .telefones p .icon {
-	font-size: 25px;
+	font-size: 18px;
 }
 
 footer .rodape {
@@ -159,14 +166,14 @@ footer .rodape .icon {
 
 .navbar-inverse .navbar-sub > li > a:hover,
 .navbar-inverse .navbar-sub > li > a:focus {
-  color: #404040;
-  text-decoration: underline;
-  background-color: transparent;
+	color: #404040;
+	text-decoration: underline;
+	background-color: transparent;
 }
 
 @media (max-width: 992px) {
 	body {
-	  	padding-top: 70px;
+		padding-top: 70px;
 		background-position: 0px 50px;
 	}
 	.navbar-flag-toggle {
@@ -175,31 +182,31 @@ footer .rodape .icon {
 	.navbar-flag {
 		display: none;
 	}
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px !important;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-left,.navbar-right {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin: 7.5px -15px !important;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-left,.navbar-right {
 		float: none !important;
 	}
 	.navbar-fixed-top {
@@ -231,8 +238,8 @@ footer .rodape .icon {
 	}
 
 	.navbar-inverse {
-  		background-color: #D02B15;
-  		background-position: 0 3px;
+		background-color: #D02B15;
+		background-position: 0 3px;
 	}
 	.nav{
 		padding-left: 50px;
@@ -246,34 +253,38 @@ footer .rodape .icon {
 	.dropdown-produtos {
 		display: block!important;
 	}
+
+	footer .telefones p.televendas {
+		font-size: 1.5em;
+	}
 }
 
 #mydiv {  
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:10000;
-    background-color:grey;
-    opacity: .8;
-    display: none;
- }
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:10000;
+	background-color:grey;
+	opacity: .8;
+	display: none;
+}
 
 .ajax-loader {
-    position: absolute;
-    left: 50%;
-    /*top: 50%;*/
-    margin-left: -32px; /* -1 * image width / 2 */
-    margin-top: 100px;  /* -1 * image height / 2 */
-    display: block;     
+	position: absolute;
+	left: 50%;
+	/*top: 50%;*/
+	margin-left: -32px; /* -1 * image width / 2 */
+	margin-top: 100px;  /* -1 * image height / 2 */
+	display: block;     
 }
 
 .row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
 }
 
 

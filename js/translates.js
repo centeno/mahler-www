@@ -20,7 +20,7 @@ var TRANSLATE_PT = {
 	RODAPE_FONE1					: '51 3303.3350',
 	RODAPE_FONE2					: '11 2626.9203',
 	RODAPE_FONE3					: '19 4040.4722',
-	RODAPE_FONE4					: '0800 724 3398',
+	RODAPE_FONE4					: 'Televendas: 0800 724 3398',
 
 	HOME_BANNER_TITULO				: 'Mahler Inox',
 	HOME_BANNER_TEXTO				: 'Bem vindo ao novo website da Mahler, aqui você encontra todas as informações sobre nós e nossos produtos.',
@@ -106,7 +106,7 @@ var TRANSLATE_EN = {
 	RODAPE_FONE1					: '+55 ' + TRANSLATE_PT["RODAPE_FONE1"],
 	RODAPE_FONE2					: '+55 ' + TRANSLATE_PT["RODAPE_FONE2"],
 	RODAPE_FONE3					: '+55 ' + TRANSLATE_PT["RODAPE_FONE3"],
-	RODAPE_FONE4					: '+55 ' + TRANSLATE_PT["RODAPE_FONE4"],
+	RODAPE_FONE4					: 'Telesales: +55 0800 724 3398',
 
 	HOME_BANNER_TITULO				: TRANSLATE_PT["HOME_BANNER_TITULO"],
 	HOME_BANNER_TEXTO				: 'Welcome to the new Mahler\'s website, here you can find all information about us and our products.',
@@ -192,7 +192,7 @@ var TRANSLATE_ES = {
 	RODAPE_FONE1					: TRANSLATE_EN["RODAPE_FONE1"],
 	RODAPE_FONE2					: TRANSLATE_EN["RODAPE_FONE2"],
 	RODAPE_FONE3					: TRANSLATE_EN["RODAPE_FONE3"],
-	RODAPE_FONE4					: TRANSLATE_EN["RODAPE_FONE4"],
+	RODAPE_FONE4					: 'Televentas: +55 0800 724 3398',
 
 	HOME_BANNER_TITULO				: TRANSLATE_PT["HOME_BANNER_TITULO"],
 	HOME_BANNER_TEXTO				: 'Bienvenido a la nueva página web de la Mahler, aquí se puede encontrar toda la información sobre nosotros y nuestros productos.',
