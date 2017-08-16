@@ -13,15 +13,15 @@ angular.module('myApp.controllers', [])
 	}
 
 	$scope.getBanner = function (slug) {
-		return URL_MEDIA +'/banners/'+ slug + '.jpg?id=' + (new Date().getTime());
+		return URL_MEDIA +'/banners/'+ slug + '.jpg'; //?id=' + (new Date().getTime());
 	}
 
 	$scope.getBannerEn = function (slug) {
-		return URL_MEDIA +'/banners/'+ slug + '_en.jpg?id=' + (new Date().getTime());
+		return URL_MEDIA +'/banners/'+ slug + '_en.jpg'; //?id=' + (new Date().getTime());
 	}
 
 	$scope.getBannerEs = function (slug) {
-		return URL_MEDIA +'/banners/'+ slug + '_es.jpg?id=' + (new Date().getTime());
+		return URL_MEDIA +'/banners/'+ slug + '_es.jpg'; //?id=' + (new Date().getTime());
 	}
 
 }])
